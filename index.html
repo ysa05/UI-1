@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yume UI</title>
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" href="https://rawgithub.com/arschmitz/jquery-mobile-datepicker-wrapper/v0.1.1/jquery.mobile.datepicker.css" />
+<link rel="stylesheet" href="assets/style.css" />
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="https://rawgithub.com/jquery/jquery-ui/1.10.4/ui/jquery.ui.datepicker.js"></script>
+<script id="mobile-datepicker" src="https://rawgithub.com/arschmitz/jquery-mobile-datepicker-wrapper/v0.1.1/jquery.mobile.datepicker.js"></script>
+</head>
+<body>
+	<div id="library" data-role="page" data-theme="a" data-heading="Library">
+		<div data-role="header">
+			<h2>Library</h2>
+			<a href="#logout" class="ui-btn-right logout" data-role="none">Log Out</a>
+		</div>
+		<div data-role="content" style="">
+			<div id="libraryOptions">
+				<div id="datePickerWrapper">
+					<input data-role="date" data-inline="true" type="text" id="datePicker">
+				</div>
+				<div id="recyleBin">
+					<div data-role="collapsible" data-collapsed-icon="carat-r" data-expanded-icon="carat-d">
+						<h3>Recycle Bin</h3>
+						<ul data-role="listview">
+							<li>Deleted item 1</li>
+							<li>Deleted item 2</li>
+							<li>Deleted item 3</li>
+							<li>Deleted item 4</li>
+							<li>Deleted item 5</li>
+							<li>Deleted item 6</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="libraryContent">
+				<div data-role="header">
+					<button>Filter</button>
+					<h3>April 17, 2015</h3>
+					<button>Select</button>
+				</div>
+				<div id="gallery"></div>
+			</div>
+			<div style="clear: both;"></div>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" data-icon="camera">Camera</a></li>
+					<li><a href="#library" data-icon="grid" class="ui-btn-active ui-state-persist">Library</a></li>
+					<li><a href="#" data-icon="recycle">Mode</a></li>
+					<li><a href="#settings" data-icon="gear">Settings</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="settings" data-role="page" data-theme="a">
+		<div data-role="header">
+			<h2>Settings</h2>
+			<a href="#logout" class="ui-btn-right logout" data-role="none">Log Out</a>
+		</div>
+		<div data-role="content">
+			<div id="settingsOptions">
+				<ul data-role="listview" style="width:100%; margin-right:0em; margin-left:0em;">
+					<li data-disabled="true">Base Station: 3SY1487P000F1 (Offline)</li>
+					<li><a href="#">Base Station Settings</a></li>
+					<li data-role="list-divider">Account Settings</li>
+					<li><a href="#">Subscription <span class="ui-li-count">Basic Plan</span></a></li>
+					<li><a href="#">Personal Information <span class="ui-icon-alert"></span>
+					</a></li>
+					<li><a href="#">Friends <span class="ui-li-count">(0)</span></a></li>
+					<li data-role="list-divider">System Settings</li>
+					<li><a href="#">Preference</a></li>
+					<li><a href="#">Camera Order</a></li>
+					<li><a href="#">Help</a></li>
+					<li><a href="#">About</a></li>
+					<li data-role="list-divider">Camera Settings</li>
+					<li data-disabled="true">3SX1480L00072 (Offline)</li>
+					<li data-disabled="true">3SX1480L003FB (Offline)</li>
+				</ul>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" class="">
+				<ul>
+					<li><a href="#" data-icon="camera">Camera</a></li>
+					<li><a href="#library" data-icon="grid">Library</a></li>
+					<li><a href="#" data-icon="recycle">Mode</a></li>
+					<li><a href="#settings" data-icon="gear" class="ui-btn-active ui-state-persist">Settings</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

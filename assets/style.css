@@ -1,0 +1,41 @@
+@CHARSET "UTF-8";
+
+.green {
+	color: #3EB249;
+	background-color: transparent;
+	margin: 0px 0px 1em
+}
+
+a.logout {
+	color: #3EB249;
+	min-height: 1.1em;
+	text-align: center;
+	display: block;
+	padding: .7em 0;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	outline: 0 !important;
+	text-decoration: none;
+}
+#libraryOptions {
+	min-width: 245px;
+	width: 20%;
+	float: left;
+}
+#datePickerWrapper > div.ui-input-text {
+	display: none;
+}
+#libraryContent {
+	width: 80%;
+	float: left;
+	padding-top: 8px;
+}
+#settingsOptions {
+	width: 350px;
+	height:100vh;
+	border-right: solid 1px #ccc;
+}
+ul li[data-disabled=true] {
+	color: #CCC !important;
+}
